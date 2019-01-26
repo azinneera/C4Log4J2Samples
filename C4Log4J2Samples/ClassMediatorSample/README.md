@@ -1,6 +1,7 @@
+Sample Class Mediator with Log4J2
 
 This sample will print the log statements written in the Class Mediator to the Carbon Console and the log file through Log4j2. 
-The sample given in the WSO2 EI 6.1.1 Manager official documentation for Class Mediator was used for this with a log statement 
+The sample given in the WSO2 EI 6.1.1 Manager official documentation for [Class Mediator](https://docs.wso2.com/display/EI611/Class+Mediator) was used for this with a log statement 
 added which should log to the Carbon console and <EI_HOME>/repository/logs/carbon.log file.
 
 This also can be used with WSO2 ESB which is built on Carbon 4.4.x. 
