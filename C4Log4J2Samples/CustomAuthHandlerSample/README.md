@@ -1,6 +1,8 @@
 
+# Sample Custom Authentication Handler with Log4J2
+
 This sample will print the log statements written in the Custom Handler to the Carbon Console and the log file through Log4j2. 
-The sample given in the API Manager official documentation for Writing a custom handler was used for this with a log statement 
+The sample given in the API Manager official documentation for [Writing a custom handler](https://docs.wso2.com/display/AM220/Writing+Custom+Handlers#WritingCustomHandlers-Writingacustomhandler) was used for this with a log statement 
 added which should log to the Carbon console and <APIM_HOME>/repository/logs/carbon.log file.
 
 This also can be used with WSO2 ESB which is built on Carbon 4.4.x. 
@@ -22,7 +24,7 @@ This also can be used with WSO2 ESB which is built on Carbon 4.4.x.
 -Dlog4j.configurationFile="$CARBON_HOME/repository/conf/log4j2.xml" \
 ```
 4. Engage the handler by modifying the <handlers> section in <APIM_HOME>/repository/resources/api_templates/velocity_template.xml file as shown below. 
-Please follow the instructions given in Engaging the custom handler section of the documentation for more details.
+Please follow the instructions given in [Engaging the custom handler](https://docs.wso2.com/display/AM220/Writing+Custom+Handlers#WritingCustomHandlers-Engagingthecustomhandler) section of the documentation for more details.
 ```xml 
    <handlers xmlns="http://ws.apache.org/ns/synapse">
    <handler class="org.wso2.carbon.test.CustomAPIAuthenticationHandler" />
